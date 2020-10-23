@@ -6,7 +6,7 @@ using namespace std;
 
 int main(){
 	int r,p;
-	vector<int> ranked,player,d;
+	vector<int> ranked,player;
 	cin>>r;
 	for(int i =0;i<r;i++){
 		int input;
@@ -25,7 +25,7 @@ int main(){
     ranked.erase(unique(begin(ranked), end(ranked)), end(ranked));
 	// now we have our ranked vector sorting and don't dontain duplicates numbers
 	
-	// this loop will iterate in our player loop
+	// this loop will iterate in our player vector
     for (int current : player)
     {
 		//we make an interator to iterate in our ranked vector and compare it with the player values , to understand more this line search about lower_bound
@@ -35,7 +35,7 @@ int main(){
         cout<<de<<endl;
         
     }
-    // hope it help ,from twix_232
+    // hope it help ,by twix_232
 
 	return 0;
 }
